@@ -1,9 +1,7 @@
-var gulp   = require('gulp'),
-    uglify = require('gulp-uglify'),
-    sass   = require('gulp-sass');
-
-
-
+var gulp     = require('gulp'),
+    uglify   = require('gulp-uglify'),
+    sass     = require('gulp-sass'),
+    imagemin = require('gulp-imagemin');
 
 // ******************************************
 // SCRIPT
@@ -20,6 +18,7 @@ gulp.task('scripts', function(){
     .pipe(gulp.dest('./public/js'));
 });
 
+
 // ******************************************
 // CSS
 // ******************************************
@@ -33,15 +32,26 @@ gulp.task('sass', function(){
 
 
 // ******************************************
+// IMAGES
+// ******************************************
+gulp.task('images', function() {
+  return gulp.src('dev/images/*')
+    .pipe((imagemin({ optimizationLevel: 7, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('./public/images'));
+});
+
+
+// ******************************************
 // WATCH
 // ******************************************
 gulp.task('watch', function(){
   gulp.watch('dev/**/*.js', ['scripts']);
   gulp.watch('dev/scss/**/*.scss', ['sass']);
+  gulp.watch('src/images/**/*', ['images']);
 });
 
 
 // ******************************************
 // DEFAULT [ALL]
 // ******************************************
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'images', 'watch']);

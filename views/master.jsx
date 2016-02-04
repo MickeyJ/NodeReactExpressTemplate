@@ -9,11 +9,10 @@ var MasterLayout = React.createClass({
         <meta name="description" content={this.props.content}/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link rel="stylesheet" href="./public/css/normalize.css"/>
         <link rel="stylesheet" href="./public/css/main.css"/>
       </head>
       <body>
-        <div className="all-wrap" className="aid">
+        <div className="all-wrap aid">
 
           <div className="top-wrap">
             <header>
