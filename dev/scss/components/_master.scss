@@ -1,0 +1,46 @@
+body{
+
+  .all-wrap{
+
+    .top-wrap{
+      width: inherit;
+      position: relative;
+    }
+
+    .main-wrap{
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    .footer-wrap{
+      width: inherit;
+    }
+
+  }
+
+}
+
+header{
+  display: inline-block;
+}
+
+nav{
+  display: inline-block;
+
+  ul{
+
+    li{
+      display: inline;
+    }
+  }
+}
+
+footer{
+
+  ul{
+
+    li{
+      display: inline;
+    }
+  }
+}

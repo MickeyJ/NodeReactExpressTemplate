@@ -15,6 +15,7 @@ app.use('/', index);
 var pretty = { beautify: true };
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
+app.use(express.static(path.join(__dirname)));
 app.engine('jsx', require('express-react-views').createEngine(pretty));
 
 

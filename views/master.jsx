@@ -9,30 +9,32 @@ var MasterLayout = React.createClass({
         <meta name="description" content={this.props.content}/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="./public/css/normalize.css"/>
         <link rel="stylesheet" href="./public/css/main.css"/>
       </head>
       <body>
-        <div id="all-wrap">
+        <div className="all-wrap" className="aid">
 
-          <header>
-            <h1>{this.props.name}</h1>
-          </header>
+          <div className="top-wrap">
+            <header>
+              <h1>{this.props.name}</h1>
+            </header>
 
-          <nav>
-            <ul>
-              <li><a href="#" >Home</a></li>
-              <li><a href="#" >About</a></li>
-              <li><a href="#" >Contact</a></li>
-            </ul>
-          </nav>
-
-          <main id="main-wrap">
+            <nav>
+              <ul>
+                <li><a href="#" >Home</a></li>
+                <li><a href="#" >About</a></li>
+                <li><a href="#" >Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <main className="main-wrap flex-row">
 
             {this.props.children}
 
           </main>
 
-          <footer id="footer-wrap">
+          <footer className="footer-wrap">
             <ul>
               <li>&copy; 2015</li>
               <li>{this.props.name}</li>

@@ -9,8 +9,12 @@ var indexComponent = React.createClass({
      name={this.props.name}
      content={this.props.content}>
 
-       <section>
+       <section className="col1-6 box aid">
          <p>This is Section One</p>
+       </section>
+
+       <section className="col5-6 box aid">
+         <p>This is Section Two</p>
        </section>
 
      </DefaultLayout>
