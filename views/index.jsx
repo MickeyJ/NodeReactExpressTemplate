@@ -10,11 +10,19 @@ var indexComponent = React.createClass({
      content={this.props.content}>
 
        <section className="col1-6 box aid">
-         <p>This is Section One</p>
+         <p>1/6</p>
        </section>
 
        <section className="col5-6 box aid">
-         <p>This is Section Two</p>
+         <p>5/6</p>
+       </section>
+
+       <section className="col3-4 box aid">
+         <p>3/4</p>
+       </section>
+
+       <section className="col1-4 box aid">
+         <p>1/4</p>
        </section>
 
      </DefaultLayout>

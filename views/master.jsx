@@ -1,6 +1,9 @@
 var React = require('react');
 
 var MasterLayout = React.createClass({
+
+  siteName: "Site Name",
+
   render: function(){
     return(
       <html lang="en">
@@ -16,14 +19,13 @@ var MasterLayout = React.createClass({
 
           <div className="top-wrap">
             <header>
-              <h1>{this.props.name}</h1>
+              <h1>{this.siteName}</h1>
             </header>
 
             <nav>
               <ul>
-                <li><a href="#" >Home</a></li>
-                <li><a href="#" >About</a></li>
-                <li><a href="#" >Contact</a></li>
+                <li><a href="/" >Home</a></li>
+                <li><a href="/about" >About</a></li>
               </ul>
             </nav>
           </div>
@@ -36,7 +38,7 @@ var MasterLayout = React.createClass({
           <footer className="footer-wrap">
             <ul>
               <li>&copy; 2015</li>
-              <li>{this.props.name}</li>
+              <li>{this.siteName}</li>
             </ul>
           </footer>
 

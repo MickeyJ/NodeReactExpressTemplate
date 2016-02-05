@@ -2,13 +2,26 @@ body{
   background: url('../images/aspen-forest.jpg') no-repeat 80% 0;
 
   .all-wrap{
-    background: rgba(255, 255, 255, 0.49);
-
+    background: rgba(255, 255, 255, 0.78);
   }
 
-  .top-wrap{
+  .top-wrap {
     width: inherit;
-    position: relative;
+
+    header{
+      display: inline-block;
+    }
+
+    nav{
+      display: inline-block;
+
+      ul{
+
+        li{
+          display: inline;
+        }
+      }
+    }
   }
 
   .main-wrap{
@@ -16,33 +29,19 @@ body{
     margin: 0 auto;
   }
 
-  .footer-wrap{
+  .footer-wrap {
     width: inherit;
-  }
 
-}
+    ul {
 
-header{
-  display: inline-block;
-}
-
-nav{
-  display: inline-block;
-
-  ul{
-
-    li{
-      display: inline;
+      li {
+        display: inline;
+      }
     }
+
   }
+
 }
 
-footer{
 
-  ul{
 
-    li{
-      display: inline;
-    }
-  }
-}

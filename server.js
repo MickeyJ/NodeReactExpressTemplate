@@ -9,7 +9,9 @@ app.set('port', port);
 
 
 var index = require('./routes/index');
+var about = require('./routes/about');
 app.use('/', index);
+app.use('/', about);
 
 
 var pretty = { beautify: true };

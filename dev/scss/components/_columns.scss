@@ -1,10 +1,3 @@
-.flex-row{
-  @include display(flex);
-  @include flex-direction(row);
-  @include flex-wrap(wrap);
-  @include justify-content(space-around);
-}
-
 
 
 .col1-2{
